@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 400px;
+            height: 550px;
+            background-color: black;
+            color: white;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 4);
+        }
+        .heading1{
+            text-align: center;
+        }
+        label{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .input{
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            width: 70px;
+        }
+        #id{
+            margin: 15px 0 5px 0;
+            
+        }
+        input,select{
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 50%;
+            margin-left: 50px;
+            margin-right: 20px;
+        }
+        #Seme{
+            width: 12%;
+            margin-right: 180px;
+        }
+        
+        #Academ{
+            width: 22%;
+            margin-right: 20px;
+        }
+        #Submit,#Reset{
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            border: none;
+            margin: 20px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #Submit:hover,#Reset:hover{
+            background-color: rgb(9, 44, 9);
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h1 class="heading1">Registration format</h1>
+    <lable class="input" for="name">Name</lable>
+        <input type="text" name="name" placeholder="enter your name">
+    <lable class="input" id="id" for="id">ID</lable>
+        <input type="text"name="id" placeholder="Enter your id">
+    <label class="input">Department</label>
+            <select name="dep" class="select">
+                <option value="Software">Software</option>
+                <option value="Computerscince">Computerscince</option>
+                <option value="IT">Information tech</option>
+                <option value="IS">Information Sytstem</option>
+            </select>
+    <label class="input">Semister</label>
+            <SELect id="Seme">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+            </SELect>
+    <label for="" class="input">Accadamic Year</label>
+            <select name="year" id="Academ">
+                <option value="2021/2022">2021/2022</option>
+                <option value="2022/2023">2022/2023</option>
+                <option value="2023/2024">2023/2024</option>
+            </select>
+        <div>
+            <button id="Submit">Submit</button>
+            <button id="Reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
